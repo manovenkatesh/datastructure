@@ -12,12 +12,13 @@ void ReversePrint(Node *head)
 {
   // This is a "method-only" submission. 
   // You only need to complete this method. 
-    if(head==NULL){
+    if(head==NULL){//when header itself null there is no need to print anything. while recursion it will be veryuseful.
+    this header denotes the current element in the recursion.
         return;
     }
     Node * temp;
     temp=head;
-    if(temp!=NULL)
+    if(temp!=NULL)//traversing to the end.by using this code by using recursion.
         ReversePrint(temp->next);
     cout<<temp->data<<endl;
     return;
